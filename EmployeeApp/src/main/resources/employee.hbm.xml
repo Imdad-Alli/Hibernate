@@ -1,0 +1,17 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="org.jsp.dto.Employee" table="employee">
+		<id name="eid" column="id">
+			<generator class="identity"/>
+		</id>
+		<property name="ename" column="name"/>
+		<property name="email" column="email"/>
+		<property name="epassword" column="password"/>
+		<property name="esalary" column="salary"/>
+		<property name="ephone" column="phone"/>
+	</class>
+</hibernate-mapping>
